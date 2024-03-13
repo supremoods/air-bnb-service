@@ -22,10 +22,17 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "default",
+    "password": "N3ZjAgEY4IWP",
+    "database":"verceldb",
+    "host":"ep-bold-glitter-a1df18hj-pooler.ap-southeast-1.aws.neon.tech",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": false,
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
