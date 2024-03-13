@@ -9,6 +9,7 @@ const app:Application = express()
 const start = async (app:Application) => {
     new RouterFactory(app)
     const db = new DatabaseConnector()
+    db.initializeModels()
     app.listen(port,()=>console.log(`REST API server ready at: http://localhost:${port}`))    
 }
 
